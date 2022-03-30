@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.event.*; 
 import javax.swing.event.*; 
 
-class Main extends JFrame{ 
+class GUIJsliderEX extends JFrame{ 
   private JTextArea ta = new JTextArea(5, 5); 
   private JScrollPane sp = new JScrollPane(ta); 
   private JSlider slider = new JSlider(0,100,0); 
   private String text = null; 
   
-  public Main(){ /
+  public GUIJsliderEX(){ /
     setTitle("Homework 3"); 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     Container c = getContentPane(); 
@@ -55,6 +55,6 @@ class Main extends JFrame{
   } 
 
   public static void main(String[] args) {
-    new Main(); 
+    new GUIJsliderEX(); 
   }
 } 
